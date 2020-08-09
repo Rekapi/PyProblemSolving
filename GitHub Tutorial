@@ -1,0 +1,39 @@
+GitHub Tutorial 
+1. create new Repository
+	a. Repository name 
+	b. create Repository 
+
+2. uploading Project to Github 
+	a. browse to the project Location at your PC
+	b. follow :
+	$ git init 
+	$ git add .
+	$ git commit -m 'Description of your commit' 
+	$ git remote add origin (copied repository link) // without brackets 
+	$ git push origin master (uploading your project into Github)
+
+3. commit new changes to original project
+	a. you should be in the directory of the project 
+	$ git add .
+	$ git commit -m 'Description of your commit'
+	$ git push origin master (updating is completed)
+
+4. to get the last update of your project 
+	a. you should be in the directory of the project
+	$ git pull origin master
+
+5. removing anything from the project 
+	$ git rm -r --cached (what you want to remove)
+	$ git commit -m 'Description of the commit'
+	$ git push origin master (uploading your project to the last update)
+	Note : remove from git first and be sure that its removed then remove it from project folder on your PC
+
+6. downloading the project to your PC (Branch)
+	a. $ cd where do you want to download the branch (desktop)
+	   $ git clone (the link of the project)
+	b. after working and making changed to the project upload updates as following :
+	   $ git add . 
+	   $ git commit -m 'Description of the commit'
+	   $ git push origin master (uploading your project)
+
+7. 
