@@ -1,5 +1,5 @@
 # Continue
-# 41. how to sum two given numbers and return a number (functions)
+# 41. how to Sum two given numbers and return a number (functions)
 # 42. how to add two objects if both objects are an integer type
 # 43. how to display name, age, address in three different lines
 # 44. how to solve (x + y) * (x + Y)
