@@ -1,4 +1,7 @@
 # Continue
+import math
+
+
 # 41. how to Sum two given numbers and return a number (functions)
 def summation(x, y):
     suma = x + y
@@ -30,7 +33,13 @@ def personal_detail():
 
 personal_detail()
 
+
 # 44. how to solve (x + y) * (x + Y)
+def solve_eq(a, b, c):
+    x1 = float(((-b ** 2) + (math.sqrt((a ** 2) - 4 * a * c))) / (2 * a))
+    x2 = float(((-b ** 2) - (math.sqrt((a ** 2) - 4 * a * c))) / (2 * a))
+    return x1, x2
+
 
 # 45. how to calculate the future value of rate of interest and a number of years
 # 46. how to calculate the distance between two points
