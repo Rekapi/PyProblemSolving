@@ -1,9 +1,56 @@
 # Continue
+import math
+
+
 # 41. how to Sum two given numbers and return a number (functions)
+def summation(x, y):
+    suma = x + y
+    if suma in range(15, 20):
+        return 20
+    else:
+        return suma
+
+
+print(summation(2, 2))
+
+
 # 42. how to add two objects if both objects are an integer type
+def add_number(a, b):
+    if not (isinstance(a, int) and isinstance(b, int)):
+        raise TypeError("Must be Integer")
+    return a + b
+
+
+print(add_number(1, 1))
+
+
 # 43. how to display name, age, address in three different lines
-# 44. how to solve (x + y) * (x + Y)
+def personal_detail():
+    name, age = "mahmoud", 20
+    address = "El Shrouk city "
+    print("Name : {}\nage: {}\naddress: {}".format(name, age, address))
+
+
+personal_detail()
+
+
+# 44. how to solve quadratic equation
+def solve_eq(a, b, c):
+    y = b ** 2 - 4 * a * c
+    z = 2 * a
+    x1 = (-b + (math.sqrt(y)))
+    x2 = (-b - (math.sqrt(y)))
+    return x1 / z, x2 / z
+
+
+a1 = float(input("The value of a : "))
+b1 = float(input("The value of b : "))
+c1 = float(input("The value of c : "))
+
+print("(x1, x2) =", solve_eq(a1, b1, c1))
+
 # 45. how to calculate the future value of rate of interest and a number of years
+
 # 46. how to calculate the distance between two points
 # 47. check if a file exists
 # 48. check if python version is 64 or 32
