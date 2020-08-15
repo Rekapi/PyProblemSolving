@@ -34,14 +34,23 @@ def personal_detail():
 personal_detail()
 
 
-# 44. how to solve (x + y) * (x + Y)
+# 44. how to solve quadratic equation
 def solve_eq(a, b, c):
-    x1 = float(((-b ** 2) + (math.sqrt((a ** 2) - 4 * a * c))) / (2 * a))
-    x2 = float(((-b ** 2) - (math.sqrt((a ** 2) - 4 * a * c))) / (2 * a))
-    return x1, x2
+    y = b ** 2 - 4 * a * c
+    z = 2 * a
+    x1 = (-b + (math.sqrt(y)))
+    x2 = (-b - (math.sqrt(y)))
+    return x1 / z, x2 / z
 
+
+a1 = float(input("The value of a : "))
+b1 = float(input("The value of b : "))
+c1 = float(input("The value of c : "))
+
+print("(x1, x2) =", solve_eq(a1, b1, c1))
 
 # 45. how to calculate the future value of rate of interest and a number of years
+
 # 46. how to calculate the distance between two points
 # 47. check if a file exists
 # 48. check if python version is 64 or 32
