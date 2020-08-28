@@ -1,14 +1,46 @@
+import itertools
 # 89. print positive numbers in a list
+nums = [34,35,1,0,-3, 5,-6,-7]
+print("Example 89.")
+print("------------")
+print("original list : ", nums)
+new_nums = list(filter(lambda x: x >0, nums))
+print("Pos numbers : ", new_nums)
+print("---------------------------------")
+
 # 102. sum all the items in a list
+def sum_list(items):
+    sum_numbers = 0
+    for x in items:
+        sum_numbers += x
+    return sum_numbers
+
+L = [1,2,4,5,9]
+print("Example 102.")
+print("------------")
+print(sum_list(L))
+
 # 103. remove duplicates on a list
+
 # 104. clone a list
+
 # 105. check if the list is empty
+
 # 106. print all unique values in a dictionary
+
 # 107. sort a dictionary by key
+
 # 108. iterate over dictionaries using for loop
+
 # 109. concatenate two dictionaries
+
 # 114. flatten a shallow in a list
+
 # 115. generate all permutations of a list
+print("Example 115.")
+print("------------")
+print(list(itertools.permurarions(L)))
+
 # 118. count number of Vowels in a string
 # 120. create the HTML string with tags around the word
 # 122. convert true to 1 and false to 0
